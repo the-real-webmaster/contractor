@@ -374,7 +374,7 @@ button {
 
 .quality::before {
     content: '';
-    background-image: url('/images/squad.svg');
+    background-image: url('../images/squad.svg');
     background-position: center;
     width: 846px;
     height: 440px;
