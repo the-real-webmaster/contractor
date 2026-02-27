@@ -339,7 +339,7 @@ button {
 --------*/
 
 .quote {
-    background-image: url('/images/quote.jpg');
+    background-image: url('../images/quote.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
