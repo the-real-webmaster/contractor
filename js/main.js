@@ -5,6 +5,7 @@ menuBtn.addEventListener("click", () => {
     headerList.classList.toggle('active');
 });
 
+// Projects slider
 const projectsSwiper = new Swiper('.projects__swiper', {
     loop: true,
     slidesPerView: 1,
@@ -27,6 +28,7 @@ const projectsSwiper = new Swiper('.projects__swiper', {
     }
 });
 
+// Clients slider
 const clientsSwiper = new Swiper('.clients__swiper', {
     loop: true,
     slidesPerView: 1,
