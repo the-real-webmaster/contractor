@@ -1,19 +1,16 @@
 const menuBtn = document.querySelector('.header__menu-btn');
-const headerList = document.querySelector('.header__list')
+const headerList = document.querySelector('.header__list');
 
 menuBtn.addEventListener("click", () => {
     headerList.classList.toggle('active');
 });
 
-const swiper = new Swiper('.swiper', {
-
+const projectsSwiper = new Swiper('.projects__swiper', {
     loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
 
     breakpoints: {
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
         810: {
             slidesPerView: 2,
             spaceBetween: 40,
@@ -24,32 +21,24 @@ const swiper = new Swiper('.swiper', {
         },
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.projects-button-next',
         prevEl: '.projects-button-prev',
     }
 });
 
-
-const swiperTwo = new Swiper('.clients__swiper', {
-
+const clientsSwiper = new Swiper('.clients__swiper', {
     loop: true,
-    initialSlide: 2,
+    slidesPerView: 1,
+    spaceBetween: 20,
 
     breakpoints: {
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        
         1215: {
-            slidesPerView: 1.50,
+            slidesPerView: 1.5,
             spaceBetween: 64,
         },
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.clients-button-next',
         prevEl: '.clients-button-prev',
