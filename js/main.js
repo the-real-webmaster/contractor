@@ -32,24 +32,21 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-const swiperTwo = new Swiper('.clients__swiper', {
-
+const clientsSwiper = new Swiper('.clients__swiper', {
     loop: true,
-    initialSlide: 2,
+    initialSlide: 0,
 
     breakpoints: {
         640: {
             slidesPerView: 1,
             spaceBetween: 20,
         },
-        
         1215: {
-            slidesPerView: 1.50,
+            slidesPerView: 1.5,
             spaceBetween: 64,
         },
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.clients-button-next',
         prevEl: '.clients-button-prev',
